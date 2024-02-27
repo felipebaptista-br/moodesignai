@@ -79,3 +79,31 @@
 .login-form button {
     width: 50%;
 }
+
+@media (max-width: 600px) {
+    .login-bg-container {
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-form {
+        width: 100%;
+        height: auto;
+        padding: 1.75rem;
+        justify-content: flex-start;
+    }
+
+    .login-form input {
+        font-size: 0.8rem;
+    }
+
+    .login-form-title h2 {
+        font-size: 2rem;
+    }
+
+    .login-form-title p {
+        font-size: 1rem;
+    }
+}
