@@ -33,7 +33,7 @@ export default function Login() {
                     <div className='submit'>
                         {!isSubmit ?
                             <button onClick={() => handleSubmit()}>Login</button>
-                            :<Loader.Root />
+                            : <Loader.Root />
                         }
                     </div>
                 </form>
