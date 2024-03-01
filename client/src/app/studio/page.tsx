@@ -15,7 +15,7 @@ store.addPage();
 
 export default function Studio() {
     return (
-        <PolotnoContainer style={{ width: '100vw', height: '100vh' }} className="studio-app-container">
+        <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
             <SidePanelWrap>
                 <SidePanel store={store} />
             </SidePanelWrap>
