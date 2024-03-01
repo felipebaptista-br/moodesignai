@@ -14,16 +14,18 @@ const store = createStore();
 store.addPage();
 
 export default function Studio() {
-    return (
-        <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
-            <SidePanelWrap>
-                <SidePanel store={store} />
-            </SidePanelWrap>
-            <WorkspaceWrap>
-                <Toolbar store={store} />
-                <Workspace store={store} />
-                <ZoomButtons store={store} />
-            </WorkspaceWrap>
-        </PolotnoContainer>
-    );
+    if (typeof window !== "undefined") {
+        return (
+            <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+                <SidePanelWrap>
+                    <SidePanel store={store} />
+                </SidePanelWrap>
+                <WorkspaceWrap>
+                    <Toolbar store={store} />
+                    <Workspace store={store} />
+                    <ZoomButtons store={store} />
+                </WorkspaceWrap>
+            </PolotnoContainer>
+        );
+    }
 }
