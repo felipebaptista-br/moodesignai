@@ -8,16 +8,12 @@ import {
 import Studio from "./pages/studio";
 
 import './global.css'
+import Home from "./pages/home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
+    element: <Home />,
   },
   {
     path: "/studio",

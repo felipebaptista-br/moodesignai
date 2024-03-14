@@ -16,18 +16,3 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--dark);
 }
-
-button {
-  cursor: pointer;
-  border: none;
-  padding: 0.75rem 2.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  background-color: rgba(46, 76, 238, 1);
-  color: var(--white);
-}
-
-button:hover {
-  transition: .4s;
-  background-color: rgb(9, 42, 232);
-}
